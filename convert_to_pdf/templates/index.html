@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!------ Include the above in your HEAD tag ---------->
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+</head>
+<body>
+    <form class="md-form" action="#" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+      <div class="file-field">
+        <div class="btn btn-primary btn-sm float-left">
+          <span>Choose files</span>
+          <input type="file" name="my_uploaded_file" >
+        </div>
+        <div class="file-path-wrapper">
+          <!-- <input class="file-path validate" type="text" placeholder="Upload one or more files"> -->
+
+        </div>
+      </div>
+      <br><br>
+      <button type="submit" name=""  class="btn btn-primary">Go</button>
+    </form>
+</body>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
