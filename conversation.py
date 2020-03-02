@@ -2,7 +2,7 @@
 import img2pdf
 from PIL import Image
 import os
-
+import shutil 
 # storing image path
 img_path = "C:/Users/p.kumar/Pictures/Aadhar.JPG"
 
@@ -21,6 +21,7 @@ file = open(r"C:\Users\p.kumar\to_pdf\to_pdf\file.pdf", "wb")
 # writing pdf files with chunks
 file.write(pdf_bytes)
 
+shutil.copy("file.pdf", "C:/Users/p.kumar/Pictures/")
 # closing image file
 image.close()
 
