@@ -6,6 +6,7 @@ from django.shortcuts import render
 def index(request):
     if request.method == "POST":
         upload = request.FILES['my_uploaded_file']
+        print(upload.type)
         print(upload)
 
     return render(request, "index.html",{})
