@@ -1,0 +1,10 @@
+asgiref==3.2.3
+certifi==2019.11.28
+Django==3.0.3
+filetype==1.0.5
+image==1.5.28
+img2pdf==0.3.3
+pdfkit==0.6.1
+Pillow==7.0.0
+pytz==2019.3
+sqlparse==0.3.0
