@@ -27,14 +27,16 @@ def index(request):
             pass
 
     return render(request, "index.html",{})
-    # return HttpResponse("Please upload a file!")
+    
 
 
 def from_image_to_pdf(img_path, pdf_file_name):
     image = Image.open(img_path)
     print(image)
-    pdf_bytes = img2pdf.convert(image.filename)
-    print(pdf_bytes)
+    # pdf_bytes = img2pdf.convert(image.filename)
+    im1 = image.convert('RGB')
+    im1.save(pdf_file_name)
+    # print(pdf_bytes)
     
 
 
